@@ -34,9 +34,6 @@ objeto = input(" El objeto del proceso ")
 templat = 'SDA\SNCC_F042_Formulario Oferente SDA.docx'
 
 
-
-
-
 if(selectedcompany == "Automaki SRL"):
     #template = 
     def OfertaSDA(template,institucion1,day,ID1,objeto):
