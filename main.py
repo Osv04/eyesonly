@@ -36,10 +36,35 @@ vigencia = input(" La duracion de la oferta ")
 
 
 
+if(selectedcompany == "Ducto Limpio S.D. SRL"):
+    #UBICACION DE LOS ARCHIVOS TEMPLATE DE CADA EMPRESA
+    template1 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\DL\\SNCCD044_EnfoqueMetodologiayPlandeTrabajo_DL.docx"
+    template2 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\DL\\SNCCD049_Experienciacontratista_DL.docx"
+    template3 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\DL\\SNCCF033_OfertaEconomica_DL.docx"
+    template4 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\DL\\SNCCF034_PresentacionDeOferta_DL.docx"
+    template5 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\DL\\SNCCF042_InformacionOferente_DL"
+    template6 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\DL\\Formulario Oferta Tecnica.docx"
+    template7 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\DL\\SNCCF036_Equipos_Oferente_DL"
+    try:
+        directory = institucion1+ID1
+        parent_dir = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\DL"
+        path = os.path.join(parent_dir,directory)
+        os.mkdir(path) 
+    except OSError as error: 
+        print(error)
 
+    #LLAMADA DE LOS METODOS DE DESARROLLO PARA CADA EMPRESA
+    forms.SNCCD044_EnfoqueMetodologiayPlandeTrabajo("Ducto Limpio S.D. SRL",template1,institucion1,day,ID1,objeto)
+    forms.SNCCD049_ExperienciaComoContratista("Ducto Limpio S.D. SRL",template2, institucion1,day,ID1)
+    forms.SNCCF033_OfertaEconomica("Ducto Limpio S.D. SRL", template3,institucion1,day,ID1)
+    forms.SNCCF034_PresentacionDeOferta("Ducto Limpio S.D. SRL",template4,institucion1,day,ID1,vigencia)
+    forms.SNCCF042_InformacionOferente("Ducto Limpio S.D. SRL",template5,institucion1,day,ID1)
+    forms.OfertaTecnica("Ducto Limpio S.D. SRL",template6,institucion1,day,ID1)
+    forms.SNCCF036_Equipos_Oferente("Ducto Limpio S.D. SRL",template7,institucion1,day,ID1)
 
+    #SE DEBE GUARDAR EN LA CARPETA AUTO GENERADA
 
-
+    # os.rename(path + "\\" + ID1 +'SNCCF042_PresentacionDeOferta' + selectedcompany +'.docx', ID1 +'SNCCF042_PresentacionDeOferta' + selectedcompany +'.docx')
 
 if(selectedcompany == "Automaki SRL"):
     #UBICACION DE LOS ARCHIVOS TEMPLATE DE CADA EMPRESA
@@ -65,13 +90,6 @@ if(selectedcompany == "Automaki SRL"):
     forms.SNCCF034_PresentacionDeOferta("Automaki SRL",template4,institucion1,day,ID1,vigencia)
     forms.SNCCF042_InformacionOferente("Automaki SRL",template5,institucion1,day,ID1)
     forms.OfertaTecnica("Automaki SRL",template6,institucion1,day,ID1)
-
-
-
-
-
-
-
 
 if(selectedcompany == "Servicios Diversos Arnaud SRL"):
     #UBICACION DE LOS ARCHIVOS TEMPLATE DE CADA EMPRESA
