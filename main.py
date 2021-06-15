@@ -34,8 +34,6 @@ objeto = input(" El objeto del proceso ")
 vigencia = input(" La duracion de la oferta ")
 
 
-
-
 if(selectedcompany == "Ducto Limpio S.D. SRL"):
     #UBICACION DE LOS ARCHIVOS TEMPLATE DE CADA EMPRESA
     template1 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\DL\\SNCCD044_EnfoqueMetodologiayPlandeTrabajo_DL.docx"
