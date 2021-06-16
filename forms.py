@@ -13,7 +13,7 @@ def SNCCF042_InformacionOferente(selectedcompany,templat,institucion1,day,ID1):
         Date = day,
         Id = ID1
     )
-    document.write(ID1+'SNCCF034_PresentacionDeOferta' + selectedcompany +'.docx')
+    document.write(ID1+'SNCCF042_InformacionOferente' + selectedcompany +'.docx')
 
 def SNCCF034_PresentacionDeOferta(selectedcompany,template,institucion1,day,ID1,objeto,vigencia):
     

@@ -40,9 +40,9 @@ if(selectedcompany == "Ducto Limpio S.D. SRL"):
     template2 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\DL\\SNCCD049_Experienciacontratista_DL.docx"
     template3 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\DL\\SNCCF033_OfertaEconomica_DL.docx"
     template4 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\DL\\SNCCF034_PresentacionDeOferta_DL.docx"
-    template5 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\DL\\SNCCF042_InformacionOferente_DL"
+    template5 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\DL\\SNCCF042_InformacionOferente_DL.docx"
     template6 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\DL\\Formulario Oferta Tecnica.docx"
-    template7 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\DL\\SNCCF036_Equipos_Oferente_DL"
+    template7 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\DL\\SNCCF036_Equipos_Oferente_DL.docx"
     try:
         directory = institucion1+ID1
         parent_dir = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\DL"
@@ -54,10 +54,10 @@ if(selectedcompany == "Ducto Limpio S.D. SRL"):
     #LLAMADA DE LOS METODOS DE DESARROLLO PARA CADA EMPRESA
     forms.SNCCD044_EnfoqueMetodologiayPlandeTrabajo("Ducto Limpio S.D. SRL",template1,institucion1,day,ID1,objeto)
     forms.SNCCD049_ExperienciaComoContratista("Ducto Limpio S.D. SRL",template2, institucion1,day,ID1)
-    forms.SNCCF033_OfertaEconomica("Ducto Limpio S.D. SRL", template3,institucion1,day,ID1)
-    forms.SNCCF034_PresentacionDeOferta("Ducto Limpio S.D. SRL",template4,institucion1,day,ID1,vigencia)
+    forms.SNCCF033_OfertaEconomica("Ducto Limpio S.D. SRL", template3,institucion1,day,ID1,objeto)
+    forms.SNCCF034_PresentacionDeOferta("Ducto Limpio S.D. SRL",template4,institucion1,day,ID1,objeto,vigencia)
     forms.SNCCF042_InformacionOferente("Ducto Limpio S.D. SRL",template5,institucion1,day,ID1)
-    forms.OfertaTecnica("Ducto Limpio S.D. SRL",template6,institucion1,day,ID1)
+    forms.OfertaTecnica("Ducto Limpio S.D. SRL",template6,institucion1,day,ID1,objeto)
     forms.SNCCF036_Equipos_Oferente("Ducto Limpio S.D. SRL",template7,institucion1,day,ID1)
 
     #SE DEBE GUARDAR EN LA CARPETA AUTO GENERADA
@@ -84,10 +84,10 @@ if(selectedcompany == "Automaki SRL"):
     #LLAMADA DE LOS METODOS DE DESARROLLO PARA CADA EMPRESA
     forms.SNCCD044_EnfoqueMetodologiayPlandeTrabajo("Automaki SRL",template1,institucion1,day,ID1,objeto)
     #forms.SNCCD049_ExperienciaComoContratista("Automaki SRL",template2, institucion1,day,ID1)
-    forms.SNCCF033_OfertaEconomica("Automaki SRL", template3,institucion1,day,ID1)
-    forms.SNCCF034_PresentacionDeOferta("Automaki SRL",template4,institucion1,day,ID1,vigencia)
+    forms.SNCCF033_OfertaEconomica("Automaki SRL", template3,institucion1,day,ID1,objeto)
+    forms.SNCCF034_PresentacionDeOferta("Automaki SRL",template4,institucion1,day,ID1,objeto,vigencia)
     forms.SNCCF042_InformacionOferente("Automaki SRL",template5,institucion1,day,ID1)
-    forms.OfertaTecnica("Automaki SRL",template6,institucion1,day,ID1)
+    forms.OfertaTecnica("Automaki SRL",template6,institucion1,day,ID1,objeto)
 
 if(selectedcompany == "Servicios Diversos Arnaud SRL"):
     #UBICACION DE LOS ARCHIVOS TEMPLATE DE CADA EMPRESA
@@ -95,9 +95,9 @@ if(selectedcompany == "Servicios Diversos Arnaud SRL"):
     template2 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\SDA\\SNCC_D_049_Experiencia_Como_Contratista.docx"
     template3 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\SDA\\SNCC_F033_Formulario_Oferta_Economica.docx"
     template4 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\SDA\\SNCC_F034_Presentacion_de_Oferta_SDA.docx"
-    template5 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\SDA\\SNCC_F042_Formulario Oferente SDA"
+    template5 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\SDA\\SNCC_F042_Formulario Oferente SDA.docx"
     #Ofertatecnica que fue creado por mi 
-    template7 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\SDA\\SNCC_F036_Equipos_Oferente"
+    template7 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\SDA\\SNCC_F036_Equipos_Oferente.docx"
     try:
         directory = institucion1+ID1
         parent_dir = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\SDA"
@@ -109,8 +109,8 @@ if(selectedcompany == "Servicios Diversos Arnaud SRL"):
     #LLAMADA DE LOS METODOS DE DESARROLLO PARA CADA EMPRESA
     forms.SNCCD044_EnfoqueMetodologiayPlandeTrabajo("Servicios Diversos Arnaud SRL",template1,institucion1,day,ID1,objeto)
     forms.SNCCD049_ExperienciaComoContratista("Servicios Diversos Arnaud SRL",template2, institucion1,day,ID1)
-    forms.SNCCF033_OfertaEconomica("Servicios Diversos Arnaud SRL", template3,institucion1,day,ID1)
-    forms.SNCCF034_PresentacionDeOferta("Servicios Diversos Arnaud SRL",template4,institucion1,day,ID1,vigencia)
+    forms.SNCCF033_OfertaEconomica("Servicios Diversos Arnaud SRL", template3,institucion1,day,ID1,objeto)
+    forms.SNCCF034_PresentacionDeOferta("Servicios Diversos Arnaud SRL",template4,institucion1,day,ID1,objeto,vigencia)
     forms.SNCCF042_InformacionOferente("Servicios Diversos Arnaud SRL",template5,institucion1,day,ID1)
     forms.SNCCF036_Equipos_Oferente("Servicios Diversos Arnaud SRL",template7,institucion1,day,ID1)
     #SE DEBE GUARDAR EN LA CARPETA AUTO GENERADA
