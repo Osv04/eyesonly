@@ -91,20 +91,20 @@ if(selectedcompany == "Automaki SRL"):
 
 if(selectedcompany == "Servicios Diversos Arnaud SRL"):
     #UBICACION DE LOS ARCHIVOS TEMPLATE DE CADA EMPRESA
-    template1 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\SDA\\SNCC_D_044_Enfoque_Metodología_y_Plan_de_Trabajo.docx"
+    template1 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\SDA\\SNCCD044_EnfoqueMetodologíayPlandeTrabajo.docx"
     template2 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\SDA\\SNCC_D_049_Experiencia_Como_Contratista.docx"
     template3 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\SDA\\SNCC_F033_Formulario_Oferta_Economica.docx"
     template4 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\SDA\\SNCC_F034_Presentacion_de_Oferta_SDA.docx"
     template5 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\SDA\\SNCC_F042_Formulario Oferente SDA.docx"
     #Ofertatecnica que fue creado por mi 
     template7 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\SDA\\SNCC_F036_Equipos_Oferente.docx"
-    try:
-        directory = institucion1+ID1
-        parent_dir = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\SDA"
-        path = os.path.join(parent_dir,directory)
-        os.mkdir(path) 
-    except OSError as error: 
-        print(error)
+    # try:
+    #     directory = institucion1+ID1
+    #     parent_dir = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\SDA"
+    #     path = os.path.join(parent_dir,directory)
+    #     os.mkdir(path) 
+    # except OSError as error: 
+    #     print(error)
 
     #LLAMADA DE LOS METODOS DE DESARROLLO PARA CADA EMPRESA
     forms.SNCCD044_EnfoqueMetodologiayPlandeTrabajo("Servicios Diversos Arnaud SRL",template1,institucion1,day,ID1,objeto)
@@ -117,4 +117,31 @@ if(selectedcompany == "Servicios Diversos Arnaud SRL"):
 
     # os.rename(path + "\\" + ID1 +'SNCCF042_PresentacionDeOferta' + selectedcompany +'.docx', ID1 +'SNCCF042_PresentacionDeOferta' + selectedcompany +'.docx')
 
+if(selectedcompany == "Red Dot Tech SAS"):
+    #UBICACION DE LOS ARCHIVOS TEMPLATE DE CADA EMPRESA
+    template1 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\NT\\SNCCD044_EnfoqueMetodologíayPlandeTrabajo_NT.docx"
+    template2 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\NT\\SNCCD049_Experienciacontratista_NT.docx"
+    template3 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\NT\\SNCCF033_OfertaEconomica_NT.docx"
+    template4 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\NT\\SNCCF034_PresentacionDeOferta_NT.docx"
+    template5 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\NT\\SNCCF042_InformacionOferente_NT.docx"
+    template6 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\NT\\Formulario Oferta Tecnica.docx"
+    #Ofertatecnica que fue creado por mi 
+    template7 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\SDA\\SNCCF036_Equipos_Oferente_NT.docx"
+    # try:
+    #     directory = institucion1+ID1
+    #     parent_dir = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\SDA"
+    #     path = os.path.join(parent_dir,directory)
+    #     os.mkdir(path) 
+    # except OSError as error: 
+    #     print(error)
 
+    #LLAMADA DE LOS METODOS DE DESARROLLO PARA CADA EMPRESA
+    forms.SNCCD044_EnfoqueMetodologiayPlandeTrabajo("Red Dot Tech SAS",template1,institucion1,day,ID1,objeto)
+    forms.SNCCD049_ExperienciaComoContratista("Red Dot Tech SAS",template2, institucion1,day,ID1)
+    forms.SNCCF033_OfertaEconomica("Red Dot Tech SAS", template3,institucion1,day,ID1,objeto)
+    forms.SNCCF034_PresentacionDeOferta("Red Dot Tech SAS",template4,institucion1,day,ID1,objeto,vigencia)
+    forms.SNCCF042_InformacionOferente("Red Dot Tech SAS",template5,institucion1,day,ID1)
+    forms.SNCCF036_Equipos_Oferente("Red Dot Tech SAS",template7,institucion1,day,ID1)
+    forms.OfertaTecnica("Red Dot Tech SAS",template6,institucion1,day,ID1,objeto)
+    
+    #SE DEBE GUARDAR EN LA CARPETA AUTO GENERADA
