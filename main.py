@@ -119,14 +119,14 @@ if(selectedcompany == "Servicios Diversos Arnaud SRL"):
 
 if(selectedcompany == "Red Dot Tech SAS"):
     #UBICACION DE LOS ARCHIVOS TEMPLATE DE CADA EMPRESA
-    template1 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\NT\\SNCCD044_EnfoqueMetodologíayPlandeTrabajo_NT.docx"
+    template1 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\NT\\SNCCD044_EnfoqueMetodologiayPlandeTrabajo_NT.docx"
     template2 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\NT\\SNCCD049_Experienciacontratista_NT.docx"
     template3 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\NT\\SNCCF033_OfertaEconomica_NT.docx"
     template4 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\NT\\SNCCF034_PresentacionDeOferta_NT.docx"
     template5 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\NT\\SNCCF042_InformacionOferente_NT.docx"
     template6 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\NT\\Formulario Oferta Tecnica.docx"
     #Ofertatecnica que fue creado por mi 
-    template7 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\SDA\\SNCCF036_Equipos_Oferente_NT.docx"
+    template7 = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\NT\\SNCCF036_Equipos_Oferente_NT.docx"
     # try:
     #     directory = institucion1+ID1
     #     parent_dir = "C:\\Users\\oscar\\Documents\\Proyectos\\xProjectOVA-EYESONLY\\SDA"
