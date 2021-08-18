@@ -26,7 +26,7 @@ def SNCCF034_PresentacionDeOferta(selectedcompany,template,institucion1,day,ID1,
         Objeto = objeto,
         Vigencia = vigencia,
     )
-    document.write(ID1 +'SNCCF042_PresentacionDeOferta' + selectedcompany +'.docx')
+    document.write(ID1 +'SNCCF034_PresentacionDeOferta' + selectedcompany +'.docx')
 
 def SNCCF033_OfertaEconomica(selectedcompany,template,institucion1,day,ID1,objeto):
     
@@ -50,7 +50,7 @@ def SNCCD044_EnfoqueMetodologiayPlandeTrabajo(selectedcompany,template,instituci
         Id = ID1,
         Objeto = objeto
     )
-    document.write(ID1 +'SNCCF042_EnfoqueMetodologiayPlandeTrabajo' + selectedcompany +'.docx')
+    document.write(ID1 +'SNCCF044_EnfoqueMetodologiayPlandeTrabajo' + selectedcompany +'.docx')
 
 def SNCCD049_ExperienciaComoContratista(selectedcompany,template,institucion1,day,ID1):
     
