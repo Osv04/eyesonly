@@ -26,7 +26,7 @@ def SNCCF034_PresentacionDeOferta(selectedcompany,template,institucion1,day,ID1,
         Objeto = objeto,
         Vigencia = vigencia,
     )
-    document.write(ID1 +'SNCCF034_PresentacionDeOferta' + selectedcompany +'.docx')
+    document.write(ID1 +'SNCCF034_PresentacionDeOferta' +'.docx')
 
 def SNCCF033_OfertaEconomica(selectedcompany,template,institucion1,day,ID1,objeto):
     
@@ -38,7 +38,7 @@ def SNCCF033_OfertaEconomica(selectedcompany,template,institucion1,day,ID1,objet
         Id = ID1,
         Objeto = objeto
     )
-    document.write(ID1 +'SNCCF033_OfertaEconomica' + selectedcompany +'.docx')
+    document.write(ID1 +'SNCCF033_OfertaEconomica' +'.docx')
 
 def SNCCD044_EnfoqueMetodologiayPlandeTrabajo(selectedcompany,template,institucion1,day,ID1,objeto):
     
@@ -50,7 +50,7 @@ def SNCCD044_EnfoqueMetodologiayPlandeTrabajo(selectedcompany,template,instituci
         Id = ID1,
         Objeto = objeto
     )
-    document.write(ID1 +'SNCCF044_EnfoqueMetodologiayPlandeTrabajo' + selectedcompany +'.docx')
+    document.write(ID1 +'SNCCF044_EnfoqueMetodologiayPlandeTrabajo' +'.docx')
 
 def SNCCD049_ExperienciaComoContratista(selectedcompany,template,institucion1,day,ID1):
     
@@ -62,7 +62,7 @@ def SNCCD049_ExperienciaComoContratista(selectedcompany,template,institucion1,da
         Id = ID1,
  
     )
-    document.write(ID1 +'SNCCD049_ExperienciaComoContratista' + selectedcompany +'.docx')
+    document.write(ID1 +'SNCCD049_ExperienciaComoContratista' + '.docx')
 
 def OfertaTecnica(selectedcompany,template,institucion1,day,ID1,objeto):
     
@@ -74,7 +74,7 @@ def OfertaTecnica(selectedcompany,template,institucion1,day,ID1,objeto):
         Id = ID1,
         Objeto = objeto
     )
-    document.write(ID1 +'OFERTATECNICA' + selectedcompany +'.docx')
+    document.write(ID1 +'OFERTATECNICA' +'.docx')
 
 def SNCCF036_Equipos_Oferente(selectedcompany,template,institucion1,day,ID1):
     template = template
@@ -84,4 +84,4 @@ def SNCCF036_Equipos_Oferente(selectedcompany,template,institucion1,day,ID1):
         Date = day,
         Id = ID1,
     )
-    document.write(ID1 +'SNCCF036_Equipos_Oferente' + selectedcompany +'.docx') 
+    document.write(ID1 +'SNCCF036_Equipos_Oferente' + '.docx') 
