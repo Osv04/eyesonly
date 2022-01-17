@@ -1,8 +1,15 @@
 from __future__ import print_function
 from datetime import date
+import time, datetime
 from re import template
 from mailmerge import MailMerge
 from datetime import date
+import locale
+
+# date_string = " "
+
+# locale.setlocale(locale.LC_TIME, '')
+# print(date_string)
 
 def SNCCF042_InformacionOferente(selectedcompany,templat,institucion1,day,ID1):
 
@@ -85,3 +92,13 @@ def SNCCF036_Equipos_Oferente(selectedcompany,template,institucion1,day,ID1):
         Id = ID1,
     )
     document.write(ID1 +'SNCCF036_Equipos_Oferente' + '.docx') 
+
+def DeclaracionJurada(selectedcompany,template,institucion1,day,ID1):
+    template = template
+    document = MailMerge(template)
+    document.merge(
+      Institucion = institucion1,
+        Date = day,
+        Id = ID1,
+    )
+    document.write('DeclaracionJurada - ' + institucion1 + " " + selectedcompany + '.docx') 
